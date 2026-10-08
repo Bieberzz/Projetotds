@@ -17,7 +17,6 @@ body {
     display: flex; justify-content: center; align-items: center;
 }
 
-/* Efeito CRT Retro */
 .scanlines {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%;
     background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.5) 50%);
@@ -36,7 +35,6 @@ body {
     perspective: 800px;
 }
 
-/* O Botão Central */
 #chaos-trigger {
     background: transparent; border: 3px solid var(--neon-green);
     color: var(--neon-green); font-size: 28px; padding: 25px 50px;
@@ -47,7 +45,6 @@ body {
 
 #chaos-trigger:active { transform: scale(0.9); }
 
-/* Popups Hacker de Erro Falsos */
 .fake-popup {
     position: absolute; width: 280px; background: #111;
     border: 2px solid var(--neon-red); border-radius: 4px;
@@ -64,7 +61,6 @@ body {
 
 @keyframes popupPop { 0% { transform: scale(0); } 100% { transform: scale(1); } }
 
-/* Zona da Imagem */
 #shatter-zone {
     position: absolute; width: 380px; height: 380px; z-index: 10;
 }
@@ -73,16 +69,13 @@ body {
 
 #target-img { width: 100%; height: 100%; object-fit: cover; border: 5px solid #fff; }
 
-/* Fragmentos de Imagem Explodindo */
+
 .shatter-piece {
     position: absolute; background-image: url('https://picsum.photos');
     background-size: 380px 380px; pointer-events: none;
     transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1), opacity 1s;
 }
 
-/* ==========================================================================
-   ESTADOS FLUIDOS DE PANE DO SISTEMA
-   ========================================================================== */
 
 .flashing-bg { animation: strobe 0.1s infinite alternate; }
 @keyframes strobe { 0% { background: #100; } 100% { background: #001; } }
@@ -94,7 +87,6 @@ body {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-/* Tela de Vitória Final */
 #victory-screen {
     position: absolute; text-align: center; z-index: 200;
 }
